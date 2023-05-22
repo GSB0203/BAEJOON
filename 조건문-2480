@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int d, d2, d3, max=0;
+    scanf("%d %d %d", &d, &d2, &d3);
+    
+    if(d==d2&&d2==d3) printf("%d", 10000+d*1000);
+    else if(d==d2||d==d3) printf("%d", 1000+d*100);
+    else if(d2==d3) printf("%d", 1000+d2*100);
+    else if(d>d2&&d>d3) printf("%d", d*100);
+    else if(d2>d&&d2>d3) printf("%d", d2*100);
+    else printf("%d", d3*100);
+}
