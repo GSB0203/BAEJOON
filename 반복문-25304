@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int i, total, n, price, num;
+    scanf("%d", &total);
+    scanf("%d", &n);
+    
+    for(i=0;i<n;i++)
+    {
+        scanf("%d %d", &price, &num);
+        total-=price * num;
+    }
+    if(total==0) printf("Yes");
+    else printf("No");
+}
