@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int input, i, max=0, rank;
+
+    
+    for(i=1;i<10;i++)
+    {
+        scanf("%d", &input);
+        if(max<input)
+        {
+            max=input;
+            rank=i;
+        }
+    }
+    printf("%d\n%d", max, rank);
+    return 0;
+}
