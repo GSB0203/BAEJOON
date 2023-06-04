@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int n, m;
+    int i, j, k;
+    int a[1000]={};
+    scanf("%d %d", &n, &m);
+    while(m-->0)
+    {
+        scanf("%d %d %d", &i, &j, &k);
+        for(i=i;i<=j;i++)
+            a[i]=k;
+    }
+    for(i=1;i<=n;i++)
+        printf("%d ", a[i]);
+}
