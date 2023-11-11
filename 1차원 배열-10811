@@ -18,6 +18,7 @@ int main() {
         b--;
         }
     }
+
     for(i=1;i<=n;i++)
         printf("%d ", basket[i]);
     return 0;
