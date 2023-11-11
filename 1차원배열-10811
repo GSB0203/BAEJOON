@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main() {
+    int n, m ,i, j, a, b;
+    int temp;
+    int basket[101]={};
+    scanf("%d %d", &n, &m);
+
+    for(i=1;i<=n;i++)
+    basket[i] = i;
+    
+    for(i=0;i<m;i++) {
+        scanf("%d %d", &a, &b);
+        while(a<b) {
+            temp = basket[a];
+            basket[a] = basket[b];
+            basket[b] = temp;
+        a++;
+        b--;
+        }
+    }
+    for(i=1;i<=n;i++)
+        printf("%d ", basket[i]);
+    return 0;
+}
