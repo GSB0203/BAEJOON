@@ -1,0 +1,25 @@
+#include<stdio.h>
+typedef struct {
+  int r;
+  char s[20];
+}char_r;
+
+int main() {
+  char_r s[8];
+  int n, i, j, l;
+  char p[1000]={};
+  scanf("%d", &n);
+  for(i=0;i<n;i++)
+    scanf("%d %s", &s[i].r, s[i].s);
+  
+  for(i=0;i<n;i++) {
+    for(j=0;j<s[i].s[j]!='\0';j++) {
+      for(l=0;l<s[i].r;l++) {
+          printf("%c", s[i].s[j]);
+      }
+    }
+    puts("");
+  }
+  
+  return 0;
+}
